@@ -1,0 +1,22 @@
+{
+  "name": "react-mvvm",
+  "version": "0.0.1",
+  "description": "Experimenting MVVM Architecture with react library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafa-rio/react-mvvm.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "mostafa rahmani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mostafa-rio/react-mvvm/issues"
+  },
+  "homepage": "https://github.com/mostafa-rio/react-mvvm#readme"
+}
