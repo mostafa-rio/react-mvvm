@@ -56,8 +56,10 @@ module.exports = {
             use: 'ts-loader'
         },
         {
-            test: /\.(png|svg|jpeg|jpg)$/i,
-            type: 'asset/resource'
+            test: /\.(png|svg|jpeg|jpg|webp)$/i,
+            use: [
+                {loader: 'file-loader'}
+            ]
         }, 
     ]
     },
