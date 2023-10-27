@@ -5,8 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".jsx"]
+    },
     entry: {
-        bundle: path.resolve(__dirname, 'src/index.js')
+        bundle: path.resolve(__dirname, 'src/index.tsx')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -35,7 +38,7 @@ module.exports = {
             ]
         },
         {
-            test: /\.(jsx|js|tsx|ts)$/,
+            test: /\.(jsx|js)$/,
             exclude: /node_modules/,
             use: {
                 loader: 'babel-loader',
@@ -47,6 +50,10 @@ module.exports = {
                     ]
                 }
             }
+        },
+        {
+            test: /\.(tsx|ts)$/i,
+            use: 'ts-loader'
         },
         {
             test: /\.(png|svg|jpeg|jpg)$/i,
