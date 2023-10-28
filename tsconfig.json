@@ -1,6 +1,9 @@
 {
-    "compilerOptions": {  
-      "jsx": "react-jsx",
-      "esModuleInterop": true
-    }
-  }
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["jest", "node"],
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*", "./__tests__/**/*"],
+  "exclude": ["./node_modules/**/*"]
+}
